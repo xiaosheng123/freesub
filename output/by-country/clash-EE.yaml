@@ -13,14 +13,13 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  server: cabinet.wwwinternetvideo.click
+  server: news.gazette.help
   port: 443
   udp: true
   type: hysteria2
   password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
-  sni: cabinet.wwwinternetvideo.click
+  sni: news.gazette.help
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
