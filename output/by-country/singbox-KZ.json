@@ -5,25 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 01 (家宽) - xiaohe",
-      "server": "162.159.153.4",
-      "server_port": 443,
-      "uuid": "f2a73750-3087-48ff-a763-1348c15dce68",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
+      "server": "62.233.39.9",
+      "server_port": 8443,
+      "uuid": "b2141c97-76af-ff6f-839b-70a53e23aad9",
       "tls": {
         "enabled": true,
-        "server_name": "rAyAn-007.mAxImA.DpDnS.OrG",
-        "insecure": false,
+        "server_name": "dl.dell.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "oHaUPZiESTQQ89DMd4uIcPWgsyeFFy58iZYX_8mbvWk",
+          "short_id": ""
         }
       },
       "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "rAyAn-007.mAxImA.DpDnS.OrG"
-        }
+        "type": "grpc",
+        "service_name": "TunService"
       }
     },
     {
@@ -31,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 英国 (United Kingdom) 01 (家宽) - xiaohe"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 英国 (United Kingdom) 01 (家宽) - xiaohe"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
