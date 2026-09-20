@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
-  server: 82.198.246.250
+  server: 82.198.246.233
   port: 180
   udp: true
   type: vmess
@@ -38,15 +38,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
-  server: 103.75.119.126
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 731f177e-00aa-480c-b935-661456139a32
-  network: ws
-  ws-opts:
-    path: /7586c69d3dc9
-- name: 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
   server: 34.87.229.148
   port: 443
   udp: true
@@ -58,6 +49,20 @@ proxies:
     short-id: 8a7d5e0248cdb1b1
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
+  server: 152.67.101.72
+  port: 23010
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
