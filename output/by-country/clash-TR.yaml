@@ -5,31 +5,43 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 185.113.223.183
-  port: 8443
+  server: 104.17.169.13
+  port: 2053
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
   tls: true
-  servername: cdn8848.776676.xyz
+  servername: inDeX.HaRMONiCA01.WORkers.DeV
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /channels/act
+    path: /axch1mttbxz2k55y01
     headers:
-      Host: cdn8848.776676.xyz
+      Host: inDeX.HaRMONiCA01.WORkers.DeV
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  server: 78.135.77.91
+  port: 25020
+  udp: true
+  type: vmess
+  uuid: nitro_teeam@
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
 rules:
 - MATCH,PROXIES
