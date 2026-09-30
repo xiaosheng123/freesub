@@ -25,43 +25,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe",
-      "server": "104.21.78.225",
-      "server_port": 443,
-      "uuid": "4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633",
-      "tls": {
-        "enabled": true,
-        "server_name": "curly-night-6928.ggdhchjk.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sync",
-        "headers": {
-          "Host": "curly-night-6928.ggdhchjk.workers.dev"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
-        "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe"
+        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
-        "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe"
+        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
