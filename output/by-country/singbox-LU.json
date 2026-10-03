@@ -4,67 +4,27 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe",
-      "server": "188.42.145.180",
+      "server": "193.57.88.7",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "8325bd97-b77c-4917-acaa-2446e9e8cc03",
       "tls": {
         "enabled": true,
-        "server_name": "www.volumeroot.com",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "vk.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mzrVbIsEggpJfXR8M7yxki2vgv3sXWQdy1bGhXqatUY",
+          "short_id": "79651ae525860543"
         }
       },
       "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.volumeroot.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇱🇺 卢森堡 (Luxembourg) 02 - xiaohe",
-      "server": "188.42.145.180",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.volumeroot.com",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.volumeroot.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇱🇺 卢森堡 (Luxembourg) 03 - xiaohe",
-      "server": "188.42.145.180",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.volumeroot.com",
-        "insecure": true
+        "type": "grpc",
+        "service_name": "haknewhpjmv"
       }
     },
     {
@@ -72,18 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe",
-        "🇱🇺 卢森堡 (Luxembourg) 02 - xiaohe",
-        "🇱🇺 卢森堡 (Luxembourg) 03 - xiaohe"
+        "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe",
-        "🇱🇺 卢森堡 (Luxembourg) 02 - xiaohe",
-        "🇱🇺 卢森堡 (Luxembourg) 03 - xiaohe"
+        "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
