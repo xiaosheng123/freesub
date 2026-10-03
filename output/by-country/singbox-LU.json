@@ -4,47 +4,67 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe",
-      "server": "lbeiggdz.smart-cats.ru",
+      "server": "188.42.145.180",
       "server_port": 443,
-      "uuid": "8325bd97-b77c-4917-acaa-2446e9e8cc03",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "vk.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mzrVbIsEggpJfXR8M7yxki2vgv3sXWQdy1bGhXqatUY",
-          "short_id": "79651ae525860543"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "haknewhpjmv"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇺 卢森堡 (Luxembourg) 02 - xiaohe",
-      "server": "176.108.242.55",
-      "server_port": 5002,
-      "uuid": "8e8ea5d2-6941-40fb-9efe-f9062b11b2b9",
-      "tls": {
-        "enabled": true,
-        "server_name": "lm.centermass.net",
+        "server_name": "www.volumeroot.com",
         "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "media.playback.v1.SessionGateway"
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.volumeroot.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇱🇺 卢森堡 (Luxembourg) 02 - xiaohe",
+      "server": "188.42.145.180",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.volumeroot.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.volumeroot.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇱🇺 卢森堡 (Luxembourg) 03 - xiaohe",
+      "server": "188.42.145.180",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.volumeroot.com",
+        "insecure": true
       }
     },
     {
@@ -53,7 +73,8 @@
       "outbounds": [
         "auto",
         "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe",
-        "🇱🇺 卢森堡 (Luxembourg) 02 - xiaohe"
+        "🇱🇺 卢森堡 (Luxembourg) 02 - xiaohe",
+        "🇱🇺 卢森堡 (Luxembourg) 03 - xiaohe"
       ]
     },
     {
@@ -61,7 +82,8 @@
       "tag": "auto",
       "outbounds": [
         "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe",
-        "🇱🇺 卢森堡 (Luxembourg) 02 - xiaohe"
+        "🇱🇺 卢森堡 (Luxembourg) 02 - xiaohe",
+        "🇱🇺 卢森堡 (Luxembourg) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
