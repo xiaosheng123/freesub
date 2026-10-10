@@ -5,8 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 185.103.110.68
-  port: 18283
+  server: 185.103.110.66
+  port: 18280
   udp: true
   type: ss
   cipher: aes-128-gcm
@@ -20,6 +20,36 @@ proxies:
   sni: vps155-edge.kermemehori.ru
   skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  server: 194.226.121.119
+  port: 443
+  udp: true
+  type: vless
+  uuid: ec6f8131-7a5d-4117-9627-6fb2b39ae0da
+  tls: true
+  servername: drive.korroh.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /remote.php/dav/89f7661a0011ce46
+    headers:
+      Host: drive.korroh.com
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  server: 65.109.188.155
+  port: 443
+  udp: true
+  type: vless
+  uuid: a95c18d0-1b39-4bc7-8521-b62b5ab3f3f7
+  tls: true
+  servername: marz.zovip2.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /gropcdn
+    headers:
+      Host: marz.zovip2.ir
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
   server: 87.242.94.135
   port: 8443
   udp: true
@@ -32,7 +62,7 @@ proxies:
     short-id: 55e5751182be6e90
   servername: passport.yandex.ru
   client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
   server: 65.108.3.59
   port: 443
   udp: true
@@ -54,6 +84,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,5 +95,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
 rules:
 - MATCH,PROXIES
