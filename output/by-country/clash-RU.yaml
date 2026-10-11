@@ -34,20 +34,21 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: 130.49.189.158
-  port: 43558
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: eicdhshSrFLCx/sZ1PSpuKyoVWGZpU95tFS4iGC1c04=
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   server: 139.28.168.126
   port: 8080
   udp: true
   type: hysteria2
   password: we_9m92rJZ93_m9Cj3KXB_mC9AS7Nx
   sni: hopp-honkong-new.roxa.org
-  skip-cert-verify: false
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  server: 94.198.54.132
+  port: 443
+  udp: true
+  type: hysteria2
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+  sni: msk.frkn.org
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
